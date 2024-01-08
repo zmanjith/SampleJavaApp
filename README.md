@@ -1,4 +1,4 @@
 
-Sample Java Applicaiton V5.6.6
+Sample Java Applicaiton V5.6.7
 Jenkins test
- Jenkin Retest
+Jenkin Retest
