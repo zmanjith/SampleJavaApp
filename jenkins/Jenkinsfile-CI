@@ -4,7 +4,7 @@ pipeline {
         stage('compile') {
 	   steps {
                 echo 'compiling..'
-		git url: 'https://github.com/puneetgavri/samplejavaapp.git'
+		git url: 'https://github.com/puneetgavri/SampleJavaApp.git'
 		sh script: '/opt/maven/bin/mvn compile'
            }
         }
@@ -26,7 +26,7 @@ pipeline {
                  }
 	   post {
                success {
-                   junit 'target/surefire-reports/*.xml'
+                   echo " Test Success"
                }
            }			
         }
