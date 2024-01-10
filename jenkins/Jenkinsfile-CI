@@ -26,13 +26,13 @@ pipeline {
                  }
 	   post {
                success {
-                   junit 'target/surefire-reports/*.xml'
+               echo "unit testing success"
                }
            }			
         }
         stage('codecoverage') {
 	   steps {
-                echo 'unittest..'
+                echo 'Code coverage...'
 	        sh script: '/opt/maven/bin/mvn verify'
                  }
 	   post {
